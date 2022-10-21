@@ -14,47 +14,44 @@
   <body>
     <div class="container">
       <h1 class="text-center">Awww CRUD!</h1>
-     <h2>Current Data</h2> 
-	  <table id="main-table" class="table">
-		<thead>
-		  <tr>
-			<th scope="col">Date</th>
-			<th scope="col">Temp</th>
-			<th scope="col">Snow (in)</th>
-			<th scope="col">Water (in)</th>
-			<th action="col">Action</th>
-		  </tr>
-		</thead>
-		<tbody>
-		</tbody>
-		</tbody>
-	  </table>
+      <h2>Current Data</h2>
+      <table id="main-table" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Temp</th>
+            <th scope="col">Snow (in)</th>
+            <th scope="col">Water (in)</th>
+            <th action="col">Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
 
-	  <h2>Enter Data</h2>
-	  <form id="main-form" class="bg-light p-3">
-			<input type="hidden" id="recordId">
-		<div class="mb-3">
-			<label for="date" class="form-label">Date</label>
-			<input type="date" class="form-control" id="date">
-		</div>
-		<div class="mb-3">
-		  <label for="current_temp" class="form-label">Current Temp</label>
-		  <input type="text" class="form-control" id="current_temp">
-		</div>
-		<div class="mb-3">
-			<label for="snow_inches" class="form-label">Snow (inches)</label>
-			<input type="text" class="form-control" id="snow_inches">
-		  </div>
-		  <div class="mb-3">
-			<label for="water_inches" class="form-label">Water (inches)</label>
-			<input type="text" class="form-control" id="water_inches">
-		  </div>
-		  <div class="d-inline" id="action-button"></div>
-		  <div class="d-inline" id="cancel-button">
-			<button type='button' class='btn btn-outline-danger' onclick='cancelForm()'>Cancel</button>
-		  </div>
-		
-	  </form>
+      <h2>Enter Data</h2>
+      <form id="main-form" class="bg-light p-3">
+        <input type="hidden" id="recordId" />
+        <div class="mb-3">
+          <label for="date" class="form-label">Date</label>
+          <input type="date" class="form-control" id="date" />
+        </div>
+        <div class="mb-3">
+          <label for="current_temp" class="form-label">Current Temp</label>
+          <input type="text" class="form-control" id="current_temp" />
+        </div>
+        <div class="mb-3">
+          <label for="snow_inches" class="form-label">Snow (inches)</label>
+          <input type="text" class="form-control" id="snow_inches" />
+        </div>
+        <div class="mb-3">
+          <label for="water_inches" class="form-label">Water (inches)</label>
+          <input type="text" class="form-control" id="water_inches" />
+        </div>
+        <div class="d-inline" id="action-button"></div>
+        <div class="d-inline" id="cancel-button">
+          <button type="button" class="btn btn-outline-danger" onclick="cancelForm()">Cancel</button>
+        </div>
+      </form>
 
       <div id="alert-box"></div>
     </div>
